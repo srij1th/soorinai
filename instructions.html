@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instructions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="instructions">
+  <div class="container card">
+    <h1>How to Play Chess</h1>
+    
+    <h3>1. Starting a Game</h3>
+    <ul>
+      <li>Go to the Dashboard and click <b>Play as White</b> or <b>Play as Black</b>.</li>
+      <li>If you choose White, you will move first. If you choose Black, wait for the AI to make its opening move.</li>
+    </ul>
+
+    <h3>2. How to Move</h3>
+    <ul>
+      <li>To move, <b>click on a piece</b> you want to move.</li>
+      <li>Highlighted squares will show all valid moves.</li>
+      <li><b>Click a highlighted square</b> to move the piece there.</li>
+    </ul>
+
+    <h3>3. Timer Rules</h3>
+    <ul>
+      <li>Each game has a <b>4-minute timer</b> (240 seconds).</li>
+      <li>The timer <b>starts after the first move</b> is made (by either player or AI).</li>
+      <li>If the time runs out, the game ends immediately.</li>
+    </ul>
+
+    <h3>4. Points System</h3>
+    <ul>
+      <li>Points are awarded for capturing opponent pieces:</li>
+      <li><b>Pawn = 1</b>, <b>Knight = 3</b>, <b>Bishop = 3</b>, <b>Rook = 5</b>, <b>Queen = 9</b></li>
+    </ul>
+
+    <h3>5. Win Conditions</h3>
+    <p>A player can win in one of two ways:</p>
+    <ul>
+      <li><b>Checkmate:</b> Trap the opponent's king so it cannot escape.</li>
+      <li><b>Timeout:</b> When the 4-minute timer ends, the player with the <b>higher points</b> wins. If points are equal, it's a Draw.</li>
+    </ul>
+
+    <button id="backBtn" class="secondary">Back to Dashboard</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

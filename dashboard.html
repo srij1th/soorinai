@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chess Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="dashboard">
+  <div class="container card">
+    <h1>Dashboard</h1>
+    <p id="welcomeText">Welcome!</p>
+    <div class="start-game-block">
+      <p class="muted">New game — choose your side:</p>
+      <div class="row color-choice-row">
+        <button type="button" id="playWhiteBtn">Play as White</button>
+        <button type="button" id="playBlackBtn" class="secondary">Play as Black</button>
+      </div>
+    </div>
+    <div class="menu-grid">
+      <button id="statsBtn">View Stats</button>
+      <button id="settingsBtn">Settings</button>
+      <button id="instructionsBtn">Instructions</button>
+      <button id="logoutBtn" class="danger">Logout</button>
+    </div>
+    <p id="message" class="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

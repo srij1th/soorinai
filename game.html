@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chess Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="game">
+  <div class="container wide card">
+    <h1>Chess Board</h1>
+    <p id="playerColorText" class="player-side-label"></p>
+    <p id="turnText">Turn: White</p>
+    <p id="timerText">Time: Waiting for first move…</p>
+    <p id="statusText" class="message"></p>
+
+    <div class="game-layout">
+      <div class="board-shell">
+        <div id="playerScoreBox" class="board-score player">Player: 0</div>
+        <div id="aiScoreBox" class="board-score ai">AI: 0</div>
+
+        <div class="board-label-row top">
+          <span>a</span><span>b</span><span>c</span><span>d</span>
+          <span>e</span><span>f</span><span>g</span><span>h</span>
+        </div>
+
+        <div class="board-middle">
+          <div class="board-label-col left">
+            <span>8</span><span>7</span><span>6</span><span>5</span>
+            <span>4</span><span>3</span><span>2</span><span>1</span>
+          </div>
+
+          <div id="board" class="board"></div>
+
+          <div class="board-label-col right">
+            <span>8</span><span>7</span><span>6</span><span>5</span>
+            <span>4</span><span>3</span><span>2</span><span>1</span>
+          </div>
+        </div>
+
+        <div class="board-label-row bottom">
+          <span>a</span><span>b</span><span>c</span><span>d</span>
+          <span>e</span><span>f</span><span>g</span><span>h</span>
+        </div>
+      </div>
+      <div class="move-log card-lite">
+        <h3>Move Log</h3>
+        <ol id="moveLogList"></ol>
+      </div>
+    </div>
+
+    <div class="row">
+      <button id="refreshBtn">Refresh Board</button>
+      <button id="backDashboardBtn" class="secondary">Back to Dashboard</button>
+    </div>
+  </div>
+
+  <div id="gameEndModal" class="modal hidden">
+    <div class="modal-card">
+      <h2>Game Over</h2>
+      <p id="modalResultText">Draw</p>
+      <p id="modalRedirectText">Returning to menu in 5s...</p>
+      <div class="row">
+        <button id="backMenuModalBtn" class="secondary">Back to Menu</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
